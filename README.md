@@ -48,7 +48,7 @@
 
 <section id="home">
   <h2>Welcome!</h2>
-  <p>Discover our latest collections and stylish pieces for every woman.</p>
+  <p>Discover our latest collections and stylish pieces for every man.</p>
 </section>
 
 <section id="about">
