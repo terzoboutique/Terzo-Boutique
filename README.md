@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
     section { padding:20px; }
     .products { display:flex; flex-wrap:wrap; justify-content:center; }
     .product { background:white; width:220px; margin:10px; padding:10px; text-align:center; border-radius:5px; box-shadow:0 0 5px rgba(0,0,0,0.1); }
-    .product img { width:200px; height: auto; border-radius:5px; }
+    .product img { width:200px; height:auto; border-radius:5px; }
     .product button { background:#222; color:white; border:none; padding:10px 20px; cursor:pointer; border-radius:5px; margin-top:10px; }
     .product button:hover { background:#575757; }
     .gallery img { width:200px; margin:10px; border-radius:5px; }
@@ -23,6 +23,7 @@
     form button { background:#222; color:white; border:none; padding:10px 20px; cursor:pointer; border-radius:5px; }
     form button:hover { background:#575757; }
     footer { background:#222; color:white; text-align:center; padding:10px; }
+    .contact-icons a { margin-right:10px; color:white; text-decoration:none; font-weight:bold; }
     @media(max-width:600px) {
       .products { flex-direction:column; align-items:center; }
       nav a { float:none; display:block; text-align:center; }
@@ -33,80 +34,80 @@
 
 <header>
   <h1>Terzo Boutique</h1>
-  <p>Модни дрехи и аксесоари в Ларнака – минимална поръчка 20€</p>
+  <p>High-quality clothing boutique – Minimum order €20</p>
 </header>
 
 <nav>
-  <a href="#home">Начало</a>
-  <a href="#about">За нас</a>
-  <a href="#products">Продукти</a>
-  <a href="#gallery">Галерия</a>
-  <a href="#testimonials">Отзиви</a>
-  <a href="#contact">Контакти</a>
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#products">Products</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <section id="home">
-  <h2>Добре дошли!</h2>
-  <p>Разгледайте нашите най-нови колекции и стилни предложения за всяка жена.</p>
+  <h2>Welcome!</h2>
+  <p>Discover our latest collections and stylish pieces for every woman.</p>
 </section>
 
 <section id="about">
-  <h2>За нас</h2>
-  <p>Terzo Boutique предлага качествени дрехи и аксесоари за съвременната жена. Всички продукти са внимателно подбрани за стил и удобство.</p>
+  <h2>About Us</h2>
+  <p>We are a boutique offering high-quality clothing. All products are carefully selected for style and comfort.</p>
 </section>
 
 <section id="products">
-  <h2>Продукти</h2>
+  <h2>Products</h2>
   <div class="products">
     <div class="product">
-      <img src="product1.jpg" alt="Дреха 1">
-      <h3>Дреха 1</h3>
-      <p>Материал: Памук</p>
-      <p>Цена: 25€</p>
-      <button>Купи сега</button>
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Clothing 1</h3>
+      <p>Material: Cotton</p>
+      <p>Price: €25</p>
+      <button onclick="window.location.href='https://wa.me/35795650750'">Order via WhatsApp</button>
     </div>
     <div class="product">
-      <img src="product2.jpg" alt="Дреха 2">
-      <h3>Дреха 2</h3>
-      <p>Материал: Полиестер</p>
-      <p>Цена: 30€</p>
-      <button>Купи сега</button>
+      <img src="product2.jpg" alt="Product 2">
+      <h3>Clothing 2</h3>
+      <p>Material: Polyester</p>
+      <p>Price: €30</p>
+      <button onclick="window.location.href='https://wa.me/35795650750'">Order via WhatsApp</button>
     </div>
-    <!-- Добави още продукти тук -->
+    <!-- Add more products here -->
   </div>
 </section>
 
 <section id="gallery">
-  <h2>Галерия</h2>
+  <h2>Gallery</h2>
   <div class="gallery">
-    <img src="gallery1.jpg" alt="Галерия 1">
-    <img src="gallery2.jpg" alt="Галерия 2">
-    <!-- Добави още снимки тук -->
+    <img src="gallery1.jpg" alt="Gallery 1">
+    <img src="gallery2.jpg" alt="Gallery 2">
+    <!-- Add more gallery images here -->
   </div>
 </section>
 
 <section id="testimonials">
-  <h2>Отзиви</h2>
-  <p>„Страхотни продукти и бързо обслужване!“ – Мария</p>
-  <p>„Много съм доволна от качеството на дрехите.“ – Елена</p>
-  <!-- Добави още отзиви тук -->
+  <h2>Testimonials</h2>
+  <p>"Amazing products and fast service!" – Maria</p>
+  <p>"Very happy with the quality of the clothes." – Elena</p>
+  <!-- Add more testimonials here -->
 </section>
 
 <section id="contact">
-  <h2>Контакти</h2>
-  <p>Адрес: Ларнака, Кипър</p>
-  <p>Телефон / WhatsApp: +357 XXX XXX XXX</p>
-  <p>Email: info@terzoboutique.com</p>
+  <h2>Contact</h2>
+  <p>Address: Larnaca, Cyprus</p>
+  <p>Phone / WhatsApp: +35795650750</p>
+  <p>Instagram: <a href="https://www.instagram.com/terzoboutique_lca/" target="_blank">@terzoboutique_lca</a></p>
   <form>
-    <input type="text" placeholder="Име" required>
+    <input type="text" placeholder="Name" required>
     <input type="email" placeholder="Email" required>
-    <textarea placeholder="Съобщение" required></textarea>
-    <button type="submit">Изпрати</button>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
   </form>
 </section>
 
 <footer>
-  <p>© 2025 Terzo Boutique. Всички права запазени.</p>
+  <p>© 2025 Terzo Boutique. All rights reserved.</p>
 </footer>
 
 </body>
